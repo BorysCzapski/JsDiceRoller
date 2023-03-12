@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Quicksand:wght@500&display=swap');
+
+/* html element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: papayawhip;
+  --secondary-color: whitesmoke;
+  --font-color: #212427;
+}
+
+/* body styling */
+
+body{
+  background-color: var(--main-color);
+  color: var(--font-color);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.flex-wrapper{
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  
+}
+
+#button{
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color:#212427;
+  border: 3px solid darkslategrey;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  transition: 0.3s ease;
+  position: relative;
+  
+}
+
+
+
+
+
+
+
+#button:hover{
+  box-shadow: 0.5rem 0.5rem 5px #212427;
+  transform: scale(1.2);
+  
+}
+
+h1{
+  font-size: 3rem;
+  
+}
+.header{
+  margin-bottom: 3rem;
+}
+
+#square{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #212427;
+  border-radius: 0.5rem;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5rem;
+}
+
+.active{
+  animation: rotation 2s;
+}
+
+@keyframes rotation{
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 1440deg;
+  }
+}
+
+
+
+
+
